@@ -24,8 +24,7 @@ server.listen(8008, () => {
   console.log("listening on http://localhost:8008/");
 });
 
-const MONGO_URL =
-  "mongodb+srv://kamaugerald:raeeD5q3SR2IrPT8@cluster0.r5z8hpx.mongodb.net/?retryWrites=true&w=majority";
+const MONGO_URL = process.env.MONGO_URL;
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 

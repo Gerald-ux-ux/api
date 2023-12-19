@@ -11,3 +11,5 @@ const userSchema = new mongoose.Schema({
     sessionToken: { type: "string", select: false },
   },
 });
+
+
